@@ -5,6 +5,13 @@ function logger(target, name, descriptor) {
     console.log(target);
     console.log(name);
     console.log("inside logger");
+    
+    const originalFunction = descriptor.value;
+    descriptor.value = function() {
+        console.log(name + " is being executed");
+        originalFunction.call();
+    }
+   
     return descriptor
 }
 
@@ -19,3 +26,4 @@ class Animal {
 
 const dog = new Animal();
 dog.walk();
+
