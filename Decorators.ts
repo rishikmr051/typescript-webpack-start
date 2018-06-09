@@ -1,6 +1,6 @@
 // Decorator - anything that is not part of function 
 // class, method, property can be decorated
-
+//     target is class, name is name of function/method and descriptor is current instance
 function logger(target, name, descriptor) {
     console.log(target);
     console.log(name);
