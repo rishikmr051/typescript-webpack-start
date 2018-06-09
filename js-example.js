@@ -17,3 +17,14 @@ innner1();
 const inner2 = parent();
 innner2();
 innner1();
+
+
+**************************************************
+**************************************************
+**************************************************
+ 
+const a = {}
+const b = a;
+b.prop1 = "something";
+console.log(a);
+// this logs same b object -> something
