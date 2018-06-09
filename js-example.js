@@ -1,5 +1,7 @@
 // Higher order function : function that returns another function
 
+// Closure : 
+
 function parent() {
  let a =10;
   return function () {
