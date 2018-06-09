@@ -1,6 +1,7 @@
 // Higher order function : function that returns another function
 
-// Closure : 
+// Closure, Spread operator (...someObject), context, call, apply, bind, 
+
 
 function parent() {
  let a =10;
